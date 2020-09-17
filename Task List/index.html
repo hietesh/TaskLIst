@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Task List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="card col s12">
+                <div class="card-content">
+                    <span class="card-title">Task List</span> 
+                        <form>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" id="task-val" placeholder="Enter some task" class="validate">
+                                    <label for="Enter Task"></label> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="submit" value="Enter Task" class="btn task-submit">
+                                 </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input type="text" placeholder="Filter Task" id="task-filter" >
+                                 </div>
+                            </div>                     
+                        </form> 
+                </div>
+                <div class="card-action">
+                    <ul class="collection"></ul>
+                    <form>
+                         <div class="input-field">
+                         <input type="submit" value="Clear Task" class="btn black" id="clear-task">
+                         </div>
+                    </form>      
+                </div> 
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
